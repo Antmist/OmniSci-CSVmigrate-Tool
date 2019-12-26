@@ -6,11 +6,11 @@ Pkg.add("DataFrames")
 Pkg.add("OmniSci")
 =#
 # configure settings bellow
-server = "txslmapd001.eng.vzwcorp.com"
+server = "server.address.com"
 port = 9091
-user = "striean"
-password = "water"
-DB = "common_cnd"
+user = "admin"
+password = "HyperInteractive"
+DB = "database"
 
 using OmniSci, DataFrames, CSV
 

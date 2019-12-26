@@ -1,0 +1,7 @@
+# OmnisciDLT-Julia
+Programmed in Julia, a fast, portable and dynamic build of an OmniSci data migration tool that copies multiple tables in and out of the database as csv data tables. 
+
+<p>
+<H3>There is 2 Julia scripts. Both contain a set of configuration parameters on the top of the scripts where you are able to set the target server, port, username and password. Also if it is the first time to run the script then remove the "#= ... =#" in orfer to unblock the package installer commands. This way the program will install all required libraries to run the scripts. Once the dependant libraries have been installed replace the "#= ... =#" block, because you only need to install the libraries once.</H3></p>
+
+<p><H3>The data migrated from OmniSciDB will go into the "data-import" directory and when migrating data into OmniSci there are 2 options either load the entire csv table into OmniSci with the "data-exporter" directory. Be careful with this folder if any file names match the table names on the OmniSciDB the tables will be deleted and overwritten with the new data inside "data-exporter" folder. Also you can append data onto exhisting tables by saving csv data in the "data-append" directory. This is helpful when you need to load the data incrementally and is a faster process then rewriting the entire dataset everytime, but the csv file name has to match a table name in the target DB or it will not load the data. Also all data being exported or appended must have a .csv file extension or it will not be used by the program.</H3></p>
